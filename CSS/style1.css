@@ -13,7 +13,7 @@ body{
 
 }
 .header{
-    background-image: url("./front-page-header.jpg");
+    background-image: url("./images/front-page-header.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -199,7 +199,7 @@ body{
 }
 
 .testmonials{
-    background-image:url("./front-page-counter.jpg");
+    background-image:url("./images/front-page-counter.jpg");
     padding-bottom: 5%;
 
 }
@@ -321,7 +321,7 @@ body{
 
 @media screen and (max-width:320px){
     /* .header{
-        background-image: url(./front-page-header.jpg);
+        background-image: url('./images/front-page-header.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
@@ -401,7 +401,7 @@ body{
 
 @media screen and(max-width:1440px) {
     .header{
-        background-image: url("./front-page-header.jpg");
+        background-image: url("./images/front-page-header.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
@@ -511,7 +511,7 @@ body{
     }
     
     .testmonials{
-        background-image:url("./front-page-counter.jpg");
+        background-image:url("./images/front-page-counter.jpg");
         padding-bottom: 5%;
     
     }
