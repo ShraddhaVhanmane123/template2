@@ -1,19 +1,52 @@
-body{
-    font-family: 'Times New Roman', Times, serif;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar Styling */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+    background-color: #f8f8f8;
+}
+
+.logo img {
+    width: 120px;
+    height: auto;
 }
 
 .topnav {
-    color: black;
     display: flex;
-    /* margin-left: 5%; */
+    gap: 20px;
+    flex-direction: row; /* Ensure horizontal alignment */
 }
+
+.topnav a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    padding: 8px 12px;
+    transition: color 0.3s ease;
+}
+
+.topnav a:hover {
+    color: #ff4500;
+}
+
+
+
+
 
 .home,.news,.contact,.trainer,.why,.about{
     padding-left: 5%;
 
 }
 .header{
-background-image: url("../images/front-page-header.jpg");
+    background-image: url("./images/front-page-header.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -199,7 +232,7 @@ background-image: url("../images/front-page-header.jpg");
 }
 
 .testmonials{
-    background-image:url("./images/front-page-counter.jpg");
+    background-image:url("./front-page-counter.jpg");
     padding-bottom: 5%;
 
 }
@@ -321,7 +354,7 @@ background-image: url("../images/front-page-header.jpg");
 
 @media screen and (max-width:320px){
     /* .header{
-        background-image: url('./images/front-page-header.jpg');
+        background-image: url(./front-page-header.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
@@ -401,7 +434,7 @@ background-image: url("../images/front-page-header.jpg");
 
 @media screen and(max-width:1440px) {
     .header{
-        background-image: url("./images/front-page-header.jpg");
+        background-image: url("./front-page-header.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
@@ -511,7 +544,7 @@ background-image: url("../images/front-page-header.jpg");
     }
     
     .testmonials{
-        background-image:url("./images/front-page-counter.jpg");
+        background-image:url("./front-page-counter.jpg");
         padding-bottom: 5%;
     
     }
@@ -613,7 +646,20 @@ background-image: url("../images/front-page-header.jpg");
 }
 
 @media screen and (min-width:768px) {
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .topnav {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .logo img {
+        margin-bottom: 10px;
+    }
     .buttons{
         display: block;
         margin-top: 10%;
